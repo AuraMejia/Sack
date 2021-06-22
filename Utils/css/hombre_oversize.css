@@ -33,54 +33,37 @@
     line-height: 0%;
     font-family: "Monserrat-Bold.woff";
 }
-.Titulos_producto{
+.Titulos_producto{ /*Contiene al título de camisetas, pantalones y busos*/
     background-color: #77EAAF;
     height: 35px;
 }
-.Titulos_producto h1 {
+.Titulos_producto h1 { /*Contiene al título de camisetas, pantalones y busos*/
     font-weight: bold;
     font-size: 26px;
     text-align: center;
     font-family: "Monserrat-Bold.woff";
 }
-.complete_pictures{
+.complete_pictures{ /*Contiene las fotos*/
     justify-content: space-around;
+    display: flex;
 }
-#completa  {
-    width: 20%;
-    height: 10%;
+#completa  { /*Sección de fotos de las camisas*/
+    width: 30%;
+    height: 340px;
+    margin-top: 8px;
 }
-#titulo{
-    text-decoration: none;
-    font-size: 35px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    line-height: 0%;
-    margin-top: 200px;
-    font-family: "Monserrat-Light.woff";
-}
-.modal-contenido{
+
+.modalDialog{ /*Contiene toda la estrucutra del modal*/
     background-color: #E5E5E5;
     width:800px;
-    padding: 10px 20px;
-    margin: 20% auto;
+    margin: 20px; /*Ojo*/
     position: relative;
     font-family: "Monserrat-Light.woff";
     display: flex;
+    transition: all 1s;
     height: 50%;
   }
-  .modal{
-    background-color: rgba(0,0,0,.8);
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity:0;
-    pointer-events:none;
-    transition: all 1s;
-  }
+
   .imagen_modal img {
       display: flex;
       width: 80%;
@@ -90,18 +73,13 @@
       margin-left: 25px;
       margin-top: 25px;
   }
-  .imagen_modal p{
-    justify-content: center;
-    align-items: center;
-    font-size: 23px;
-  }
-  #miModal:target{
-    opacity:1;
-    pointer-events:auto;
-  }
-.img.img_modal img{
-    width: 30%;
-    height: 30%;
+.caja a{
+    font-family: "Monserrat-Light.woff";
+    text-decoration: none;
+    font-size: 28px;
+}
+.caja{
+    text-align: center;
 }
 .colores{
     display: flex;
@@ -127,10 +105,11 @@
       width: 30%;
       height: 30%;
   }
-#salida a{
-    background-color: grey;
-    color: lavender;
+.precio_modal{
+    text-align: center;
+    font-size: 23px;  
 }
+
 @font-face { /*Carpeta de fuentes*/
     font-family: "Monserrat-Light.woff";
     src: url(../Fuentes/Montserrat-Light.woff);
