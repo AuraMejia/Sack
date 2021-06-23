@@ -14,7 +14,7 @@
   display: -webkit-flex;
   -webkit-flex-direction: row;
   display: flex;
-  flex-direction: row;
+  flex-direction: rogit statw;
   /*Como se puede ver, "flex" es un nuevo elemeto de CSS3, y no todos los navegadores lo soportan nativamente, por ello hemos repetido la instruccion varias veces con llamadas a diferentes frameworks*/
   float: left;
   list-style: none;
