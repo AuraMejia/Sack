@@ -45,60 +45,64 @@
 }
 .complete_pictures{
     justify-content: space-around;
+    display: flex ;
 }
 #completa  {
-    width: 20%;
-    height: 10%;
+    margin-top: 25px;
+    width: 30%;
+    height: 400px;
 }
-#titulo{
+.titulo{ /*Contiene al título del precio que activa el modal*/
+    text-align: center;
+    margin-bottom: 125px;
+    margin-top: 85px;
+}
+.titulo a{ /*Contiene al valor de $30.000*/
     text-decoration: none;
     font-size: 35px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    line-height: 0%;
-    margin-top: 200px;
     font-family: "Monserrat-Light.woff";
 }
 .modalDialog{
     background-color: #E5E5E5;
     width:800px;
-    padding: 10px 20px;
-    margin: 20% auto;
-    position: relative;
-    font-family: "Monserrat-Light.woff";
     display: flex;
-    height: 50%;
-  }
-  .modal{
-    background-color: rgba(0,0,0,.8);
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 20vh;
+    height: 45vh;
+    bottom: 0;
+    right: 50px;
     opacity:0;
-    pointer-events:none;
-    transition: all 1s;
-  }
+    justify-content: center;
+    margin-left: 25vw;
+    font-family: "Monserrat-Light.woff";
+}
   .imagen_modal img {
       display: flex;
       width: 80%;
       height: 80%;
       justify-content: center;
       align-items: center;
-      margin-left: 25px;
+      margin-left: 30px;
       margin-top: 25px;
   }
+  .contiene_modal{
+      display: flex;
+      padding: 23px;
+  }
   .imagen_modal p{
-    justify-content: center;
-    align-items: center;
     font-size: 23px;
+    text-align: center;
   }
-  .modalDialog:target{
+  .modalDialog:target {
     opacity:1;
-    pointer-events:auto;
-  }
+    pointer-events: auto;
+
+}
 .img.img_modal img{
     width: 30%;
     height: 30%;
@@ -131,6 +135,145 @@
     background-color: grey;
     color: lavender;
 }
+/*Sección de los colores en circulos del modal para pantalones y busos*/ 
+.titulo1{ /*Contiene al título del precio que activa el modal*/
+    text-align: center;
+    margin-bottom: 125px;
+    margin-top: 85px;
+}
+.colores1{
+    display: flex;
+    justify-content: space-around;
+}
+#negro{
+    background-color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#blanco{
+   background-color: white; 
+   border-radius: 50%;
+   width: 8%;
+}
+#gris{
+   background-color:grey;
+   border-radius: 50%;
+   width: 8%;
+}
+#beich{
+   background-color: #E0DDC2;
+   border-radius: 50%;
+   width: 8%;
+}
+#azul_oscuro{
+   background-color: #180D72;
+   border-radius: 50%;
+   width: 8%;
+}
+.colores2{
+    display: flex;
+    justify-content: space-around;
+}
+#azul_claro{
+    background-color: #7AB1E8;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#rosa_pastel{
+    background-color: #E4B996;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#rosado{
+    background-color: #D896E4;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#violeta{
+    background-color: #B137C7;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#morado{
+    background-color: #601298;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.colores3{
+    display: flex;
+    justify-content: space-around;
+}
+#amarillo{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#amarillo_pastel{
+    background-color:#FFFFBF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#amarillo_quemado{
+    background-color: #B6AA48;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#naranja{
+    background-color: #EDAB04;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#cafe{
+    background-color:#684B00;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.colores4{
+    display: flex;
+    justify-content: space-around;
+}
+ #verde_oscuro{
+     background-color: #0F4330;
+     border-radius: 50%;
+     width: 25px;
+     height: 25px;
+ }
+ #verde_pastel{
+    background-color: #8FDDAF; 
+    border-radius: 50%;
+    width: 8%;
+ }
+ #rojo{
+    background-color: red;
+    border-radius: 50%;
+    width: 8%;
+ }
+ #rojo_oscuro{
+    background-color: #A30C2A;
+    border-radius: 50%;
+    width: 8%;
+ }
+ #vinotinto{
+    background-color: #860A23;
+    border-radius: 50%;
+    width: 8%;
+ }
+  .camisetas img{
+      width: 30%;
+      height: 30%;
+  }
 @font-face { /*Carpeta de fuentes*/
     font-family: "Monserrat-Light.woff";
     src: url(../Fuentes/Montserrat-Light.woff);
