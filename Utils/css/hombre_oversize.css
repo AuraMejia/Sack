@@ -73,10 +73,11 @@
     top: 0;
     left: 0;
     margin-top: 20vh;
-    height: 45vh;
+    height: 50vh;
     bottom: 0;
     right: 50px;
     opacity:0;
+
     justify-content: center;
     margin-left: 25vw;
     font-family: "Monserrat-Light.woff";
@@ -141,6 +142,9 @@
     margin-bottom: 125px;
     margin-top: 85px;
 }
+.pantalones{
+    display: flex;
+}
 .colores1{
     display: flex;
     justify-content: space-around;
@@ -174,12 +178,14 @@
 .colores2{
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
 }
 #azul_claro{
     background-color: #7AB1E8;
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    
 }
 #rosa_pastel{
     background-color: #E4B996;
@@ -207,6 +213,7 @@
 }
 .colores3{
     display: flex;
+    margin-top: 15px;
     justify-content: space-around;
 }
 #amarillo{
@@ -242,6 +249,7 @@
 
 .colores4{
     display: flex;
+    margin-top: 15px;
     justify-content: space-around;
 }
  #verde_oscuro{
@@ -281,4 +289,36 @@
 @font-face { /*Carpeta de fuentes*/
     font-family: "Monserrat-Bold.woff";
     src: url(../Fuentes/Montserrat-Bold.woff);
+}
+/*ESTILOS DEL FOOTER*/
+.footer{ /*Contenedor general del pie de página*/
+    background-color: #B194C8;
+    font-family: "Monserrat-Light.woff";
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 300px;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+#text{ /*Título de la sección*/ 
+    font-family: "Monserrat-Bold.woff";
+}
+.last{ /*Somos arte*/
+    background-color: #77EAAF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Monserrat-Bold.woff";
 }
