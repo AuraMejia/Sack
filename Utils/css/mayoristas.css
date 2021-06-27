@@ -1,0 +1,161 @@
+.envios{
+    background-color: #77EAAF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    border: 2px black solid;
+    line-height: 0%;
+    width: 100%;
+    font-family: "Monserrat-Bold.woff";
+}
+#home{
+    width: 100%;
+    overflow: hidden;
+}
+#menu{
+    align-items: center;
+    cursor: pointer;
+}
+.Text{
+    display: flex;
+}
+.SecctionTittle{ /*Contiene al título Mayoristas*/
+    background-color: #B194C8;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    line-height: 0%;
+    font-family: "Monserrat-Bold.woff";
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+h1 {
+    width: 60%;
+    padding: 35px;
+}
+.cuadro_info{
+    border: 1px solid black;
+    font-family: "Monserrat-Light.woff";
+    width: 100%;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: 150px;
+}
+.contenido{
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    animation-name: llegadaDerecha;
+    animation-duration: 3s;
+}
+@keyframes llegadaDerecha {
+    0%{
+        opacity: 0;
+        transform:translateX(1000px) ;
+    }
+    60%{
+        opacity: 0.8;
+        transform: translateX(-80px)
+    }
+    80%{
+        opacity: 0.9;
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h3{
+    font-family: "Monserrat-Bold.woff";
+    font-size: 25px;
+}
+#texto {
+    font-family: "Monserrat-Light.woff"; 
+    position: absolute; 
+}
+#bordadora{
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+}
+#tela{
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: relative; 
+    z-index:1;
+}
+#paleta{
+    width: 420px;
+    height: 600px;
+}
+/*EMPRENDEDORES*/
+.SecctionTitulo{ /*Contiene al título Emprendedores*/
+    background-color: #B194C8;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 35px;
+    text-align: center;
+    line-height: 0%;
+    font-family: "Monserrat-Bold.woff";
+    display: flex;
+    margin-top: 35px;
+}
+.parte1{
+    display: flex;
+    justify-content: space-around;
+    margin: 7%;
+}
+.parte2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*ESTILOS DEL FOOTER*/
+.footer{ /*Contenedor general del pie de página*/
+    background-color: #B194C8;
+    font-family: "Monserrat-Light.woff";
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 300px;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+#text{ /*Título de la sección*/ 
+    font-family: "Monserrat-Bold.woff";
+}
+.last{ /*Somos arte*/
+    background-color: #77EAAF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Monserrat-Bold.woff";
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Light.woff";
+    src: url(../Fuentes/Montserrat-Light.woff);
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Bold.woff";
+    src: url(../Fuentes/Montserrat-Bold.woff);
+}
