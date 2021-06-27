@@ -1,48 +1,3 @@
-.envios{
-    background-color: #77EAAF;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    border: 2px black solid;
-    line-height: 0%;
-    width: 100%;
-    font-family: "Monserrat-Bold.woff";
-}
-#home{
-    width: 100%;
-    overflow: hidden;
-}
-#menu{
-    align-items: center;
-    cursor: pointer;
-}
-#banner_oversize_hombre{
-    width: 100%;
-}
-.envios p{
-    align-items: center;
-    justify-content: center;
-
-}
-.SecctionTittle{ /*Contiene al título Oversize*/
-    background-color: #B194C8;
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-    border: 2px black solid;
-    line-height: 0%;
-    font-family: "Monserrat-Bold.woff";
-}
-.Titulos_producto{
-    background-color: #77EAAF;
-    height: 35px;
-}
-.Titulos_producto h1 {
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-    font-family: "Monserrat-Bold.woff";
-}
 .complete_pictures{
     justify-content: space-around;
     display: flex ;
@@ -290,35 +245,4 @@
     font-family: "Monserrat-Bold.woff";
     src: url(../Fuentes/Montserrat-Bold.woff);
 }
-/*ESTILOS DEL FOOTER*/
-.footer{ /*Contenedor general del pie de página*/
-    background-color: #B194C8;
-    font-family: "Monserrat-Light.woff";
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 10px;
-    font-size: 20px;
-    height: 300px;
-    align-items: center;
-}
-.footer a{
-    text-decoration: none;
-    color: black;
-}
-#text{ /*Título de la sección*/ 
-    font-family: "Monserrat-Bold.woff";
-}
-.last{ /*Somos arte*/
-    background-color: #77EAAF;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-family: "Monserrat-Bold.woff";
-}
+
