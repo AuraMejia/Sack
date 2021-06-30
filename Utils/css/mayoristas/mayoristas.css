@@ -1,6 +1,7 @@
 
 .Text{
     display: flex;
+    align-items: center;
 }
 .SecctionTittle{ /*Contiene al título Mayoristas*/
     background-color: #B194C8;
@@ -8,18 +9,24 @@
     font-size: 26px;
     text-align: center;
     line-height: 0%;
-    font-family: "Monserrat-Bold.woff";
+    height: 100px;
+    font-family: "Monserrat_Bold";
     display: flex;
     justify-content: center;
     width: 60%;
 }
-h1 {
-    width: 60%;
-    padding: 35px;
+
+h4 {
+    font-size: 50px;
+    padding: 45px;
+}
+h5 {
+   font-size: 28px;
+   padding: 45px;
 }
 .cuadro_info{
     border: 1px solid black;
-    font-family: "Monserrat-Light.woff";
+    font-family: "Monserrat_Light";
     width: 100%;
     padding: 35px;
     justify-content: center;
@@ -56,41 +63,62 @@ h1 {
     }
 }
 h3{
-    font-family: "Monserrat-Bold.woff";
-    font-size: 25px;
+    font-family: "Monserrat_Light";
+    font-size: 20px;
 }
 #texto {
-    font-family: "Monserrat-Light.woff"; 
-    position: absolute; 
+    font-family: "Monserrat_"; 
 }
 #bordadora{
     width: 420px;
     height: 420px;
     border-radius: 50%;
 }
-#tela{
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    opacity: 0.3;
-    position: relative; 
-    z-index:1;
-}
+
 #paleta{
     width: 420px;
     height: 600px;
 }
+.img_fondo {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute; 
+    background-image: url(../../Imagenes/sack_plus/tela.jpg);
+}
+.material{
+    display: flex;
+    flex-direction: column;
+}
+.materiales{
+    position: relative;
+    width: 420px ;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center 
+}
+
 /*EMPRENDEDORES*/
 .SecctionTitulo{ /*Contiene al título Emprendedores*/
     background-color: #B194C8;
     font-weight: bold;
     font-size: 28px;
-    padding: 35px;
     text-align: center;
     line-height: 0%;
-    font-family: "Monserrat-Bold.woff";
+    font-family: "Monserrat_Bold";
     display: flex;
     margin-top: 35px;
+}
+#emprendedores h4{
+    width: none;
+    padding: 0;
 }
 .parte1{
     display: flex;

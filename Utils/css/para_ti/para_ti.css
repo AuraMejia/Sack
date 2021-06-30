@@ -20,17 +20,17 @@
     margin: 5%;
 }
 .texto{ /*Elige el color [..]*/
-    font-family: "Monserrat-Bold.woff";
+    font-family: "Monserrat_Bold";
     text-align: center;
     font-size: 34px;
 }
 
 /*FUENTES*/
 @font-face { /*Carpeta de fuentes*/
-    font-family: "Monserrat-Light.woff";
+    font-family: "Monserrat_Light";
     src: url(../Fuentes/Montserrat-Light.woff);
 }
 @font-face { /*Carpeta de fuentes*/
-    font-family: "Monserrat-Bold.woff";
+    font-family: "Monserrat_Bold";
     src: url(../Fuentes/Montserrat-Bold.woff);
 }
