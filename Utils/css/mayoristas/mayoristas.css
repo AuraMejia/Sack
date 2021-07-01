@@ -67,7 +67,8 @@ h3{
     font-size: 20px;
 }
 #texto {
-    font-family: "Monserrat_"; 
+    font-family: "Monserrat_Light"; 
+    font-size: 18px;
 }
 #bordadora{
     width: 420px;
@@ -83,7 +84,6 @@ h3{
     width: 420px;
     height: 420px;
     border-radius: 50%;
-    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;

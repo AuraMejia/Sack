@@ -4,56 +4,532 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- estilos globales -->
+     <link rel="stylesheet" href="../Utils/css/estilos_globales.css">
+     <!-- estilos propios de la pagina hombre urban oversize -->
     <link rel="stylesheet" type="text/css" href="../Utils/css/hombre/hombre_slim.css">
-    link
     <title>SLIM</title>
 </head>
-<html>
-    <body>
-        <!-- Mediante la siguiente abreviatura de Emmet creamos una lista desordenada de 5 elementos contenida en un NAV, definiendo el contenido de los elementos y asignando clase e id donde corresponda:
-        
-        "nav.menu#menu_sup>ul#lista1>li#elem1{Portada}+li#elem2{Artículos}+li#elem3{Comentarios}+li#elem4{Staff}+li#elem5{Contacto}"
-        
-        Posteriormente podremos (y deberemos, ya que es un menu) añadir vinculos/enlaces a los elementos de la lista con "href", esto lo lograremos gracias a una pequeña modificación de la abreviatura de Emmet anterior, quedando asi:
-        
-        "nav.menu#menu_sup>ul#lista1>(li#elem1>a{Portada})+(li#elem2>a{Artículos})+(li#elem3>a{Comentarios})+(li#elem4>a{Staff})+(li#elem5>a{Contacto})"
-        
-        Las direcciones de los vinculos o enlaces habra que introducirlas a mano (..cachis!!) 
-        
-        Dado que vamos a crear un menu desplegable, con mas elementos dentro de los propios elementos de la lista principal, será necesario crear nuevas listas desordenadas dentro de dichos elementos, para ello usaremos las abreviaturas que dejo como comentario en cada elemento-->
-        <nav class="menu" id="menu_sup">
-            <ul id="lista1">
-                <li id="elem1"><a href="#">Portada</a>
-                <!--ul.submenu#lista11>(li#elem11>a{Novedades})+(li#elem12>a{Colecciones})+(li#elem13>a{Diseñadores})-->
-                    <ul class="submenu" id="lista11">
-                        <li id="elem11"><a href="#">Novedades</a></li>
-                        <li id="elem12"><a href="#">Colecciones</a></li>
-                        <li id="elem13"><a href="#">Diseñadores</a></li>
-                    </ul>
-                </li>
-                <li id="elem2"><a href="#">Artículos</a>
-                <!--ul.submenu#lista12>(li#elem21>a{Moda hombre})+(li#elem22>a{Moda mujer})+(li#elem23>a{Moda niño})-->
-                    <ul class="submenu" id="lista12">
-                        <li id="elem21"><a href="#">Moda hombre</a></li>
-                        <li id="elem22"><a href="#">Moda mujer</a></li>
-                        <li id="elem23"><a href="#">Moda niño</a></li>
-                    </ul>
-                </li>
-                <li id="elem3"><a href="#">Comentarios</a></li>
-                <li id="elem4"><a href="#">Staff</a>
-                <!--ul.submenu#lista14>(li#elem41>a{Quienes somos})+(li#elem42>a{Nuestro negocio})+(li#elem43>a{Breve historia})-->
-                    <ul class="submenu" id="lista14">
-                        <li id="elem41"><a href="#">Quienes somos</a></li>
-                        <li id="elem42"><a href="#">Nuestro negocio</a></li>
-                        <li id="elem43"><a href="#">Breve historia</a></li>
-                    </ul>
-                </li>
-                <li id="elem5"><a href="#">Contacto</a></li>
-            </ul>
-        </nav>   
-     </body>
- </html>
+<body>
+    <!-- franja de envios -->
+    <div class="franja_verde">
+        <h1>ENVÍOS GRATIS A TODA COLOMBIA DESDE $80.000</h1>
+    </div>
+    <!-- cabecera -->
+    <div class="cabecera">
+        <!-- portada sack -->
+        <img id="home" src="../Utils/Imagenes/home/sack2.svg" alt="Cabecera">
+        <!-- menu -->
+        <img id="menu" src="../Utils/Imagenes/home/menu_icono.svg" alt="Menu">
+        <br>
+        <!-- imagen portada segun seccion -->
+        <img class="portada1" src="../Utils/Imagenes/hombre/hombre_urban/slim/busos/portada1.png" alt="">
+    </div>
+    <!-- franja de la sub clase -->
+    <div class="franja_morada">
+        <h5>SLIM</h5>
+    </div>
+    
+    <!--Inicia la sección de fotos de buzos e incluye modal*/-->
+    <!-- franja producto -->
 
-        <script src="../Utils/js/hombre_slim.js"></script><!--Enlace al js-->
+    <div class="franja_verde">
+        <h5>Buzos</h5>
+    </div>
+    <div class="busos">
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_azulrey.jpg" alt="Gris">
+         <a href="#openModal1"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal1" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_azulrey.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa, bolsillo delantero y silueta ajustada en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+                
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+           
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_blanco.jpg" alt="Gris">
+        <a href="#openModal2"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal2" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_blanco.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+                 
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+           
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_azul.jpg" alt="Gris">
+        <a href="#openModal3"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal3" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_azul.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+             
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+            
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+            
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+        
+        </div>
+                </div> <!--cierra contenido-->
+                </div> <!--cierra modal total-->
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+    </div> <!-- Cierra el modal de busos -->
+
+    <div class="busos1">
+
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_rojo.jpg" alt="Gris">
+        <a href="#openModal4"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal4" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_rojo.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+             
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+            
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+            </div>
+                <a id="salida" href="#" >X</a>
+                
+            </div>
+        
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_negro.jpg" alt="Gris">
+         <a href="#openModal5"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal5" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/busos/buso_negro.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2">
+                    <h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+                
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+             
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+
+    </div> <!-- Cierra el modal de busos -->
+
+     <!--Inicia la sección de fotos de pantalones e incluye modal*/-->
+    <!-- franja producto -->
+    <div class="franja_verde">
+        <h5>Sack Pants</h5>
+    </div>
+
+    <div class="pantalones"> <!--Primera sección-->
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/slim_gris (1).jpg" alt="Gris">
+     <a href="#openModal6"><p>$55.000</p></a></div><!--modal-->
+		<div id="openModal6" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/slim_gris (1).jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido"><h4>SACK PANT</h4>
+                <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p></div>
+                <div><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+    
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+            
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+           
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/green (1).jpg" alt="Gris">
+    <a href="#openModal7"><p>$55.000</p></a></div><!--modal-->
+		<div id="openModal7" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/green (1).jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div>
+                <h4>SACK PANT</h2>
+                <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                <div class="contenido"><h4>TALLAS</h4>
+                <p class="tallas">S     M     L      XL     XXL     </p></div>
+                <div class="contenido"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+            
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+            
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+            </div>
+                </div>
+            
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/pants_negro (1).jpg" alt="Gris">
+            <a href="#openModal8"><p>$55.000</p></a></div><!--modal-->
+            <div id="openModal8" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/pants_negro (1).jpg" alt="Camiseta central">
+                        <p>$55.000</p>
+                    </div>
+                    <div>
+                    <h4>SACK PANT</h2>
+                    <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+    </div> <!-- Cierra el div de pantalones -->
+
+    <div class="pantalones1"> <!-- Segunda sección -->
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/conjunto_caqui (1).jpg" alt="Gris">
+            <a href="#openModal9"><p>$105.000</p></a></div><!--modal-->
+            <div id="openModal9" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/conjunto_caqui (1).jpg" alt="Camiseta central">
+                        <p>$105.000</p>
+                    </div>
+                    <div>
+                    <h4>CONJUNTO DE HODDIE Y PANTALON</h2>
+                    <p>Conjunto de jogger y hoddie en algodón perchado tipo mónaco resortado con bolsillos laterales del pantalón y capota en el buso. </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/conjunto_rojo (2) (1).jpg" alt="Gris">
+            <a href="#openModal7"><p>$105.000</p></a></div><!--modal-->
+            <div id="openModal7" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/slim/pantalones/conjunto_rojo (2) (1).jpg" alt="Camiseta central">
+                        <p>$105.000</p>
+                    </div>
+                    <div>
+                    <h4>CONJUNTO DE HODDIE Y PANTALON</h2>
+                    <p>Conjunto de jogger y hoddie en algodón perchado tipo mónaco resortado con bolsillos laterales del pantalón y capota en el buso. </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+    </div> <!-- Cierra el modal de pantalones1 -->
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="contacto">
+            <img id="icono_contacto" src="../Utils/Imagenes/footer/whatsapp_icono.svg" alt="contacto">
+            <h1>CONTACTO</h1>
+            <a href="https://api.whatsapp.com/message/P7JDS6WZTV5LM1"><h3>301-525-2844</h3></a>
+            <a href="https://www.google.com/maps/place/Av.+1+de+Mayo+%2312g-34,+Bogot%C3%A1/@4.5806788,-74.1033948,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f98dd90a33e15:0xb0f5c57c528b9f18!8m2!3d4.5806788!4d-74.1012061"><h3>Avenida 1 de mayo #12g-34 sur</h3></a>
+        </div>
+        <div class="redes">
+            <img id="icono_redes" src="../Utils/Imagenes/footer/people_icono.svg">
+            <h1>REDES SOCIALES</h1>
+            <div class="redes_sociales">
+                <a href="https://www.instagram.com/sackstore_/"><img id="instagram" src="../Utils/Imagenes/footer/instagram.svg" ></a>
+                <a href="https://www.facebook.com/davidfelipe.mejiaruiz"><img id="facebook" src="../Utils/Imagenes/footer/facebook.svg "></a>
+            </div>
+        </div> 
+        <div class="pago">
+            <img id="icono_pago" src="../Utils/Imagenes/footer/icono_hands.svg" alt="pago">
+            <h1>MEDIOS DE PAGO</h1>
+            <h3>Bancolombia</h3>
+            <h3>Nequi</h3>
+            <h3>Daviplata</h3>
+        </div>
+    </div>
+    <!-- franja final  -->
+    <div class="franja_verde">
+        <h1>Somos arte, somos Sack</h1>
+    </div>
 </body>
 </html>
