@@ -1,79 +1,308 @@
-/*Comenzamos por dar formato a las listas, elimiando viñetas y definiendo fondo, color, etc*/
-#lista1 {
-  width: 200px;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+.portada1{
+  width: 100%;
+  height: 400px;
 }
-/*A continuacion daremos formato a los diferentes submenus, identificandolos por su posicion como hijos de la lista o si queremos, tambien podriamos hacerlos por su clase (submenu)*/
-#lista1 li { 
-  display: -ms-flex;
-  -ms-flex-direction: row;
-  display: -moz-flex;
-  -moz-flex-direction: row;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  display: flex;
-  flex-direction: rogit statw;
-  /*Como se puede ver, "flex" es un nuevo elemeto de CSS3, y no todos los navegadores lo soportan nativamente, por ello hemos repetido la instruccion varias veces con llamadas a diferentes frameworks*/
-  float: left;
-  list-style: none;
-  margin:0px;
-  padding: 0px;
+#completa  {
+  margin-top: 25px;
+  height: 400px;
+  border-radius: 5px;
 }
-.submenu li{
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-/*Proseguimos con los vinculos contenidos en esos elementos, que es donde trabajaremos a partir de ahora, definiendo su aspecto*/
-#lista1 li a, .submenu li a {
-  display: block;
-  width: 200px;
-  text-decoration: none;/*eliminamos es subrayado tipico de los vinculos en HTML*/
+h5{
+  font-size: 24px;
   text-align: center;
-  color: darkcyan;
-  font-family: "Comic Sans", sans-serif;
-  font-size: 21px;
-  background-color: darksalmon;
-  background-image: -webkit-linear-gradient(left top, darksalmon, pink);
-  background-image: -o-linear-gradient(bottom right, darksalmon, pink);
-  background-image: -moz-linear-gradient(bottom right, darksalmon, pink);
-  background-image: linear-gradient(to bottom right, darksalmon, pink);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 6px;
+  font-family: "Monserrat_Bold";
 }
-/*Tambien definiremos un estilo diferente para cuando el raton  pase sobre ellos*/
-#lista1 li a:hover, .submenu li a:hover {
-  color: lightskyblue;
+.titulo{ /*Contiene al título del precio que activa el modal*/
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 35px;
+  color: black;
+}
+.titulo a{ /*Contiene al valor de $30.000*/
+  text-decoration: none;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monserrat_Light";
+  color: black;
+}
+
+.modalDialog{ /*Estilos*/
+  background-color: #F7F7F7 ;
+  width:800px;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  margin-top: 20vh;
+  height: 50vh;
+  bottom: 0;
+  right: 50px;
+  justify-content: center;
+  margin-left: 25vw;
+  letter-spacing: 1px;
+  
+}
+.modal_total{
+  display: flex;
+  flex-direction: column;
+  height: 100%;  
+  margin: 2px;
+}
+p{
+  font-family: 'Monserrat_light';
+  justify-content: space-between;
+}
+h4{
+  font-family: "Monserrat_Bold";
+  font-size: 22px;
+}
+.contenido1{
+  height: auto;
+  padding-top: 35px;
+  transform: none;
+}
+.contenido{
+  height: auto;
+  padding-top: 12%;
+  transform: none;
+}
+.contenido2{
+  height: auto;
+  padding-top: 22px;
+  transform: none;
+}
+.imagen_modal img {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.contiene_modal{
+    display: flex;
+    padding: 23px;
+}
+.imagen_modal p{
+  font-size: 23px;
+  text-align: center;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+  display: flex;
+
+}
+.img.img_modal img{
+  width: 30%;
+  height: 30%;
+}
+.colores{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+
+}
+#negro{
+   background-color: black;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+}
+#blanco{
+  background-color: white; 
+  border-radius: 50%;
+  width: 8%;
+}
+#gris{
+  background-color:grey;
+  border-radius: 50%;
+  width: 8%;
+}
+.camisetas img{
+    width: 30%;
+    height: 30%;
+}
+#salida a{
+  background-color: grey;
+  color: lavender;
+}
+/*Sección de los colores en circulos del modal para pantalones y busos*/ 
+
+.titulo1{ /*Contiene al título del precio que activa el modal*/
+  text-align: center;
+  width: 100%;
+  grid-template-columns: repeat(1fr 1fr);
+  flex-direction: column;
+}
+.titulo1 a{ /*Precio que activa el modal*/
+  font-family: 'Monserrat_light';
+  padding: 15px;
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+}
+.pantalones{
+  display: flex;
+  justify-content: space-around;
+}
+.busos{
+  display: flex;
+}
+.busos1{
+  display: flex;
+  justify-content: space-around;
+}
+.pantalones1{
+  display: flex;
+  /*margin-bottom: 35px;*/
+  margin-left: 3%;
+}
+.colores1{
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-row-gap: 9px;
+}
+#negro{
+  background-color: black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#blanco{
+ background-color: white; 
+ border-radius: 50%;
+ width: 25px;
+}
+#gris{
+ background-color:grey;
+ border-radius: 50%;
+ width: 25px;
+}
+#beich{
+ background-color: #E0DDC2;
+ border-radius: 50%;
+ width: 25px;
+}
+#azul_oscuro{
+ background-color: #180D72;
+ border-radius: 50%;
+ width: 25px;
+}
+.colores2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+#azul_claro{
+  background-color: #7AB1E8;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  
+}
+#rosa_pastel{
+  background-color: #E4B996;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#rosado{
+  background-color: #D896E4;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#violeta{
+  background-color: #B137C7;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#morado{
+  background-color: #601298;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.colores3{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+#amarillo{
+  background-color: yellow;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#amarillo_pastel{
+  background-color:#FFFFBF;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#amarillo_quemado{
+  background-color: #B6AA48;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#naranja{
+  background-color: #EDAB04;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#cafe{
+  background-color:#684B00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.colores4{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+#verde_oscuro{
+   background-color: #0F4330;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+}
+#verde_pastel{
+  background-color: #8FDDAF; 
+  border-radius: 50%;
+  width: 25px;
+}
+#rojo{
   background-color: red;
-  background-image: -webkit-linear-gradient(left top, darkred, orange);
-  background-image: -o-linear-gradient(bottom right, darkred, orange);
-  background-image: -moz-linear-gradient(bottom right, darkred, orange);
-  background-image: linear-gradient(to bottom right, darkred, orange);
-  font-size: 21px;
-  background-size: contain;
-  text-shadow: #cbe7f8 -1px 1px 0px;
+  border-radius: 50%;
+  width: 25px;
 }
-.submenu {
-  display: none;/*Esta instruccion hara desaparecer los submenus, los haramos aparecer solo al mover el raton sobre la opcion correcpondiente del menu principal*/
-  float: left;
-  width: 600px;
-  margin: 0px;
-  padding: 0px;
+#rojo_oscuro{
+  background-color: #A30C2A;
+  border-radius: 50%;
+  width: 25px;
 }
-/*Ahora definiremos una regla para que aparezca el submenu correspondiente al pasar el raton sobre la opcion indicada en el menu principal*/
-#lista1 li:hover .submenu {
-  display: block;
+#vinotinto{
+  background-color: #860A23;
+  border-radius: 50%;
+  width: 25px;
 }
-/*Finalmente definimos otra regla para cambiar el aspecto cuando se Clickea sobre los enlaces*/
-#lista1 li a:active {
-  /*Usaremos una nueva propiedad de CSS3 llamada transform, que permite "jugar" con los elementos del documento de manera visual.
-  Como sucede con los gradientes, no todos los navegadores la soportan aun, asi que habrá que definirla de 4 maneras, y aun así es posible que en algunos navegadores no produzca efecto alguno*/
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);  
-  box-shadow: yellow 0px 0px 15px;
-  color: yellow;
-  text-shadow: none;
+.camisetas img{
+    width: 30%;
+    height: 30%;
 }

@@ -1,14 +1,20 @@
-.complete_pictures{
-    justify-content: space-around;
-    display: flex ;
-    margin-top: 25px;
+.shorts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 4px;
 }
-#completa  {
+.portada1{
+    width: 100%;
+    height: 400px;
+  }
+  #completa  {
     margin-top: 25px;
+    width: 50%;
     height: 400px;
     border-radius: 5px;
-}
-h5{
+  }
+  h5{
     font-size: 24px;
     text-align: center;
     justify-content: center;
@@ -16,14 +22,14 @@ h5{
     display: flex;
     padding-top: 6px;
     font-family: "Monserrat_Bold";
-}
-.titulo{ /*Contiene al título del precio que activa el modal*/
+  }
+  .titulo{ /*Contiene al título del precio que activa el modal*/
     text-align: center;
     margin-bottom: 40px;
     margin-top: 35px;
     color: black;
-}
-.titulo a{ /*Contiene al valor de $30.000*/
+  }
+  .titulo a{ /*Contiene al valor de $30.000*/
     text-decoration: none;
     font-size: 35px;
     align-items: center;
@@ -31,11 +37,9 @@ h5{
     text-align: center;
     font-family: "Monserrat_Light";
     color: black;
-}
-.tallas {
-    justify-content: space-around;
-}
-.modalDialog{ /*Estilos*/
+  }
+  
+  .modalDialog{ /*Estilos*/
     background-color: #F7F7F7 ;
     width:800px;
     display: none;
@@ -51,43 +55,34 @@ h5{
     margin-left: 25vw;
     letter-spacing: 1px;
     
-}
-.modal_total{
+  }
+  .modal_total{
     display: flex;
     flex-direction: column;
     height: 100%;  
     margin: 2px;
-}
-p{
+  }
+  p{
     font-family: 'Monserrat_light';
     justify-content: space-between;
-}
- h4{
+  }
+  h4{
     font-family: "Monserrat_Bold";
     font-size: 22px;
-}
-.contenido1{
+  }
+
+  .contenido2{
     height: auto;
-    padding-top: 35px;
+    padding-top: 15px;
+    padding-left: 35px;
     transform: none;
-}
-.contenido{
-    height: auto;
-    padding-top: 12%;
-    transform: none;
-}
-.contenido2{
-    height: auto;
-    padding-top: 22px;
-    transform: none;
-}
+  }
   .imagen_modal img {
       display: flex;
-      width: 80%;
       height: 80%;
       justify-content: center;
       align-items: center;
-      margin-left: 30px;
+      margin-left: 50px;
       margin-top: 25px;
   }
   .contiene_modal{
@@ -102,212 +97,158 @@ p{
     opacity:1;
     pointer-events: auto;
     display: flex;
-
-}
-.img.img_modal img{
+  
+  }
+  .img.img_modal img{
     width: 30%;
     height: 30%;
-}
-.colores{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-
-}
- #negro{
-     background-color: black;
-     border-radius: 50%;
-     width: 25px;
-     height: 25px;
- }
- #blanco{
-    background-color: white; 
-    border-radius: 50%;
-    width: 8%;
- }
- #gris{
-    background-color:grey;
-    border-radius: 50%;
-    width: 8%;
- }
-  .camisetas img{
-      width: 30%;
-      height: 30%;
   }
-#salida a{
-    background-color: grey;
-    color: lavender;
-}
-/*Sección de los colores en circulos del modal para pantalones y busos*/ 
-
-.titulo1{ /*Contiene al título del precio que activa el modal*/
+  .titulo1{ /*Contiene al título del precio que activa el modal*/
     text-align: center;
     width: 100%;
     grid-template-columns: repeat(1fr 1fr);
     flex-direction: column;
-}
-.titulo1 a{ /*Precio que activa el modal*/
+  }
+  .titulo1 a{ /*Precio que activa el modal*/
     font-family: 'Monserrat_light';
     padding: 15px;
     font-size: 26px;
     text-decoration: none;
     color: black;
-}
-.pantalones{
-    display: flex;
-    justify-content: space-around;
-}
-.busos{
-    display: flex;
-}
-.busos1{
-    display: flex;
-    justify-content: space-around;
-}
-.pantalones1{
-    display: flex;
-    /*margin-bottom: 35px;*/
-    margin-left: 3%;
-}
-.colores1{
+  }
+  .colores1{
     justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
     grid-row-gap: 9px;
-}
-#negro{
+  }
+  #negro{
     background-color: black;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#blanco{
+  }
+  #blanco{
    background-color: white; 
    border-radius: 50%;
    width: 25px;
-}
-#gris{
+  }
+  #gris{
    background-color:grey;
    border-radius: 50%;
    width: 25px;
-}
-#beich{
+  }
+  #beich{
    background-color: #E0DDC2;
    border-radius: 50%;
    width: 25px;
-}
-#azul_oscuro{
+  }
+  #azul_oscuro{
    background-color: #180D72;
    border-radius: 50%;
    width: 25px;
-}
-.colores2{
+  }
+  .colores2{
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
-}
-#azul_claro{
+  }
+  #azul_claro{
     background-color: #7AB1E8;
     border-radius: 50%;
     width: 25px;
     height: 25px;
     
-}
-#rosa_pastel{
+  }
+  #rosa_pastel{
     background-color: #E4B996;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#rosado{
+  }
+  #rosado{
     background-color: #D896E4;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#violeta{
+  }
+  #violeta{
     background-color: #B137C7;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#morado{
+  }
+  #morado{
     background-color: #601298;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-.colores3{
+  }
+  .colores3{
     display: flex;
     margin-top: 15px;
     justify-content: space-around;
-}
-#amarillo{
+  }
+  #amarillo{
     background-color: yellow;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#amarillo_pastel{
+  }
+  #amarillo_pastel{
     background-color:#FFFFBF;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#amarillo_quemado{
+  }
+  #amarillo_quemado{
     background-color: #B6AA48;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#naranja{
+  }
+  #naranja{
     background-color: #EDAB04;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-#cafe{
+  }
+  #cafe{
     background-color:#684B00;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
-
-.colores4{
+  }
+  
+  .colores4{
     display: flex;
     margin-top: 15px;
     justify-content: space-around;
-}
- #verde_oscuro{
+  }
+  #verde_oscuro{
      background-color: #0F4330;
      border-radius: 50%;
      width: 25px;
      height: 25px;
- }
- #verde_pastel{
+  }
+  #verde_pastel{
     background-color: #8FDDAF; 
     border-radius: 50%;
     width: 25px;
- }
- #rojo{
+  }
+  #rojo{
     background-color: red;
     border-radius: 50%;
     width: 25px;
- }
- #rojo_oscuro{
+  }
+  #rojo_oscuro{
     background-color: #A30C2A;
     border-radius: 50%;
     width: 25px;
- }
- #vinotinto{
+  }
+  #vinotinto{
     background-color: #860A23;
     border-radius: 50%;
     width: 25px;
- }
-  .camisetas img{
-      width: 30%;
-      height: 30%;
   }
-
-
