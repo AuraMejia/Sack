@@ -76,6 +76,54 @@ h3{
     width: 100%;
 }
 
+
+/* cuando es una fila de tres columnas  */
+.imgenes3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+/* cuando es una fila de dos columnas  */
+.imgenes2{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.imag{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.imgenes3 img{
+    width:250px;
+    height: 300px;
+}
+.imgenes2 img{
+    width:250px;
+    height: 300px;
+}
+
+
+
+
+
+
 /* footer */
 .footerGri{ /*Contenedor padre*/
     background-color: #B194C8;
@@ -112,15 +160,21 @@ h3{
     color: black;
 }
 
-/* responsive footer */
+
+
+
+
+
+/* TODO: mirar porque no sirve con el css de responsive */
+/* responsive */
 @media screen and (min-width:375px) and (max-width:420px) {
-    .footerGri{
+    .footerGri, .imgenes2, .imgenes3{
         grid-template-columns: 1fr;
     } 
 }
 
 @media screen and (min-width:421px) and (max-width:800px) {
-    .footerGri{
+    .footerGri, .imgenes2, .imgenes3{
         grid-template-columns: 1fr;
     } 
 }
