@@ -24,14 +24,14 @@ h1{
     transform: translateX(-50%) translateY(-50%);
 }
 h2{
-    color: black;
     padding-left: 30px;
     margin: 0px 0px 0px;
-    font-family: "Monserrat_Bold.";
+    font-family: "Monserrat_Bold";
     font-size: 18px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    position: relative;
 }
 h3{
     font-family: 'Monserrat_light';
@@ -87,7 +87,6 @@ h3{
     font-size: 20px;
     height: 300px;
     align-items: center;
-
 }
 /* iconos  */
 #icono_contacto, #icono_redes, #icono_pago{
@@ -118,3 +117,38 @@ grid-area: "pago" ;
        }
 }
     
+
+.footerGri{ /*Contenedor padre*/
+    background-color: #B194C8;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    height: auto;
+    align-items: center;
+}
+.footerGri{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+/* responsive footer */
+@media screen and (min-width:375px) and (max-width:420px) {
+    .footerGri{
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+    .footerGri{
+        grid-template-columns: 1fr;
+    } 
+}
