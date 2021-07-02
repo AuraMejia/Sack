@@ -1,0 +1,24 @@
+.imagLargi{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+}
+.imagLargi img {
+    width: 285px;
+    height: 435px;
+}
+.imagHor{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;  
+}
+/* .imagHor img {
+    width: 100%;
+    height: 285px;
+} */

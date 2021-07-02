@@ -1,0 +1,12 @@
+/* responsive footer */
+@media screen and (min-width:375px) and (max-width:420px) {
+    .footerGri{
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+    .footerGri{
+        grid-template-columns: 1fr;
+    } 
+}
