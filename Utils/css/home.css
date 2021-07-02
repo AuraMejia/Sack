@@ -1,0 +1,105 @@
+/*Inicio banner principal*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.bannerprincipal img{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    padding-top: 10px;
+    background-attachment: fixed;
+     
+}
+
+
+/*Menù lateral*/
+
+.menu{
+    padding-top: 0%;
+    margin: 0px;
+    height: 800px;
+    width: 500px;
+    font-family:  "Monserrat-Light.woff";
+    float: left;
+    
+
+
+}
+.item1 a{
+    color: white ;
+}
+.item2{
+    background-color: rgb(173, 167, 167);
+}
+
+.item1:hover  {
+background-color: rgb(155, 153, 153);
+}
+.item1 {
+    border-bottom: white 2px solid;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    min-height: 20px;
+}
+.item2 li:hover{
+background-color: rgb(155, 153, 153); 
+}
+
+
+#cont-menu{
+    height: 700px;
+    width: 300px;
+    background-color: rgb(5, 5, 5);
+}
+nav ul li:hover > ul {
+display: block;
+}
+nav ul li ul {
+    display: none;
+}
+
+/*Fin de Menù lateral*/
+
+/*banner categorias*/
+.categorias img{
+    width: 100%;
+    height: 700px;
+    
+}
+.categorias img{
+    height: 260px;
+    width: 270px;
+    padding: 100px;
+    justify-content: right;
+    border-radius: 100%;
+}
+
+
+/*fin banner categorias*/
+
+/*banner fabricantes*/
+.fabricantes img{
+    padding-top: 60px;
+    width: 100%;
+    height: 400px;
+}
+.franja_verde{
+    margin-top: 50px;
+}
+.testimonios img{
+padding: 50px;
+}
+
+
+/* fin fabricantes*/
+
+
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Light.woff";
+    src: url(../Fuentes/Montserrat-Bold.woff);
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Bold.woff";
+    src: url(../Fuentes/Montserrat-Light.woff);
+}
