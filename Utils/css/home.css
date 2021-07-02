@@ -22,92 +22,54 @@
     width: 500px;
     font-family:  "Monserrat-Light.woff";
     float: left;
-    display: block;
+    
 
 
 }
+.item1 a{
+    color: white ;
+}
+.item2{
+    background-color: rgb(173, 167, 167);
+}
+
+.item1:hover  {
+background-color: rgb(155, 153, 153);
+}
+.item1 {
+    border-bottom: white 2px solid;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    min-height: 20px;
+}
+.item2 li:hover{
+background-color: rgb(155, 153, 153); 
+}
+
+
 #cont-menu{
     height: 700px;
     width: 300px;
     background-color: rgb(5, 5, 5);
 }
-.menu ul{
-    list-style: none;
-    position: absolute;
-    min-width: 160px;
-    
-    
-}
-
-.menu ul li a{
-    
-    text-decoration: none;
-}
-
-#cont-menu > li{
-    float: left;
-    
-    
-}
-.menu #cont-menu :hover {
-    background-color:rgb(34, 34, 34);
-
-
-}
-#cont-menu ul .item3:hover > li{
-display: block;
-} 
-
-#cont-menu li .item2 a:hover > ul {
+nav ul li:hover > ul {
 display: block;
 }
-
-#cont-menu li .item1:hover > li{
-display: block;
-}
-
-
-
- #cont-menu  li .item1, ul li .item2, ul .item3{
-    display: none00;
-}
-#cont-menu  .item1 a{
-    
-    background-color: rgb(80, 80, 80);
-    color: rgb(250, 250, 250);
-    padding: 10px 40px;
-    display: block;
-    
-}
-#cont-menu .item1 {
-    background-color: black;
-    color: white;
-    padding: 10px 40px;
-    
-}
-#cont-menu li .item2{
-    background-color: rgb(114, 112, 112);
-    padding: 10px 40px;
-    display: none;
-
-}
-#cont-menu li ul .item3{
-    background-color: rgb(185, 186, 187);
-    padding: 10px 40px;
+nav ul li ul {
     display: none;
 }
 
 /*Fin de Menù lateral*/
 
 /*banner categorias*/
-.categorias{
+.categorias img{
     width: 100%;
-    height: 600px;
+    height: 700px;
     
 }
 .categorias img{
-    height: 220px;
-    width: 220px;
+    height: 260px;
+    width: 270px;
     padding: 100px;
     justify-content: right;
     border-radius: 100%;
@@ -118,13 +80,17 @@ display: block;
 
 /*banner fabricantes*/
 .fabricantes img{
-    padding-top: 300px;
+    padding-top: 60px;
     width: 100%;
     height: 400px;
 }
 .franja_verde{
-    margin-top: 10px;
+    margin-top: 50px;
 }
+.testimonios img{
+padding: 50px;
+}
+
 
 /* fin fabricantes*/
 
