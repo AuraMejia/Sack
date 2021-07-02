@@ -123,12 +123,14 @@ h3{
 .parte1{
     display: flex;
     justify-content: space-around;
-    margin: 7%;
+    margin: 5%;
+    
 }
 .parte2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 @font-face { /*Carpeta de fuentes*/
