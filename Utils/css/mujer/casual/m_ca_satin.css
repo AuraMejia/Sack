@@ -1,0 +1,12 @@
+.imagSa{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+}
+.imagSa img {
+    width: 100px;
+    height: 235px;
+}

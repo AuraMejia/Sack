@@ -75,8 +75,28 @@ h3{
 .portada{
     width: 100%;
 }
-
-
+/* cuando es una una columnas  */
+.imgenes1{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+/* cuando es una fila de dos columnas  */
+.imgenes2{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
 /* cuando es una fila de tres columnas  */
 .imgenes3{
     width: 100%;
@@ -89,17 +109,7 @@ h3{
     row-gap: 15px;
 }
 
-/* cuando es una fila de dos columnas  */
-.imgenes2{ 
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-    row-gap: 15px;
-}
+
 
 .imag{
     align-items: center;
