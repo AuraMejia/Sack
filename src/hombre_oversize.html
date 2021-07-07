@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Utils/css/hombre_oversize.css">
+     <!-- estilos globales -->
+     <link rel="stylesheet" href="../Utils/css/estilos_globales.css">
+     <!-- estilos propios de la pagina hombre urban oversize -->
+    <link rel="stylesheet" type="text/css" href="../Utils/css/hombre/hombre_oversize.css">
     <title>OVERSIZE</title>
 </head>
 <body>
-
-    <div class="envios"> 
-        <p>ENVÍOS GRATIS A TODA COLOMBIA DESDE $80.000</p>
+    <!-- franja de envios -->
+    <div class="franja_verde">
+        <h1>ENVÍOS GRATIS A TODA COLOMBIA DESDE $80.000</h1>
     </div>
+    <!-- cabecera -->
     <div class="cabecera">
-         <img id="home" src="../Utils/Imagenes/home/sack2.svg" alt="Cabecera">
-         <p><img id="menu" src="../Utils/Imagenes/home/menu_icono.svg" alt="Menu"></p>
-         <img id="banner_oversize_hombre" src="../Utils/Imagenes/hombre_urban/oversize/banner_oversize.jpg" alt="Banner">
+        <!-- portada sack -->
+        <img id="home" src="../Utils/Imagenes/home/sack2.svg" alt="Cabecera">
+        <!-- menu -->
+        <img id="menu" src="../Utils/Imagenes/home/menu_icono.svg" alt="Menu">
+        <br>
+        <!-- imagen portada segun seccion -->
+        <img class="portada" src="../Utils/Imagenes/hombre/hombre_urban/oversize/banner_oversize.jpg" alt="">
     </div>
-    <div class="SecctionTittle">
-        <h1>OVERSIZE</h1>
+    <!-- franja de la sub clase -->
+    <div class="franja_morada">
+        <h5>OVERSIZE</h5>
     </div>
-    <div class="Titulos_producto"> <!--Inicia la sección de fotos de camisetas e incluye modal*/-->
-        <h1>Camisetas</h1>
+    <!-- franja producto -->
+    <div class="franja_verde">
+        <h5 class="titulo_franja_verde">Camisetas</h5>
+    </div>
+    <div class="complete_pictures">
+        <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/camiseta.png" alt="Camiseta central">
+        <img src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/oversize_doblada.png" alt="Camiseta doblada">
     </div>
 
-         <div class="complete_pictures">
-            <img id="completa" src="../Utils/Imagenes/hombre_urban/oversize/pantalones/camiseta.png" alt="Camiseta central">
-            <img id="completa" src="../Utils/Imagenes/hombre_urban/oversize/pantalones/oversize_doblada.png" alt="Camiseta doblada">
-        </div>
-        <p><a id= "titulo" href="#miModal">$30.000</a></p>
-
-<div id="miModal" class="modal">
-  <div class="modal-contenido">
-                <div class="imagen_modal"><img  src="../Utils/Imagenes/hombre_urban/oversize/pantalones/camiseta.png" alt="Camiseta central">
+        <div class="titulo"> <a href="#openModal1">$30.000</a></div><!--modal-->
+		<div id="openModal1" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal">
+                    <img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/camiseta.png" alt="Camiseta central">
                     <p>$30.000</p>
                 </div>
                 <div>
-                <h2>CAMISETA OVERSIZE BORDADA</h2>
-                <p>Camiseta manga corta en franela con bordado frontal y cuello redondo </p>
-                <h2>TALLAS</h2>
-                <p>S     M     L      XL     XXL     </p>
-                <h2>TALLAS</h2>
-                <p>S M L XL XXL </p>
-                <h2>COLORES</h2>
-                <div class="colores"> <div id="negro"></div>
+                <div class="contenido1"><h4>CAMISETA OVERSIZE BORDADA</h4>
+                <p>Camiseta manga corta en franela con bordado frontal y cuello redondo </p></div>
+                <div class="contenido1"><h4 class="tittle_modal">TALLAS</h4>
+                <p>S M L XL XXL </p></div>
+                <div class="contenido1"><h4 class="tittle_modal">COLORES</h4>
+                <div class="colores"> 
+                <div id="negro"></div>
                 <div id="blanco"></div>
                 <div id="gris"></div>
             </div>
+        </div>
                 </div>
                 <a id="salida" href="#" >X</a>
             </div>
@@ -54,35 +64,551 @@
     
         
     </div>
-    
-    <div class="Titulos_producto"> <!--Inicia la sección de fotos de pantalones e incluye modal*/-->
-        <h1>Sack Pants</h1>
+
+    <!--Inicia la sección de fotos de pantalones e incluye modal*/-->
+    <!-- franja producto -->
+    <div class="franja_verde">
+        <h5>Sack Pants</h5>
     </div>
-    <img id="completa" src="../Utils/Imagenes/hombre_urban/oversize/pantalones/gris.jpg" alt="Gris">
-    <div id="miModal" class="modal">
-        <div class="modal-contenido">
-          <a id="salida" href="#" >X</a>
-                      <img id="completa" src="../Utils/Imagenes/hombre_urban/oversize/pantalones/gris.jpg">
-                      <p>$30.000</p>
-                      <h2>Sack Pant </h2>
-                      <p>Jogger en algodón perchado con bolsillos delanteros y resortado. </p>
-                      <h2>TALLAS</h2>
-                      <p>S     M     L      XL     XXL     </p>
-                      <h2>TALLAS</h2>
-                      <p>S M L XL XXL </p>
-                      <h2>COLORES</h2>
-                      <div class="colores">
-                        <div id="negro"></div>
-                        <div id="blanco"></div>
-                        <div id="gris"></div>
-                      </div>
-                  </div>
-              </div>
-              
-          </div>
-
-
-
+    <div class="pantalones"> <!--Primera sección-->
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/gris.jpg" alt="Gris">
+     <a href="#openModal2"><p>$55.000</p></a></div><!--modal-->
+		<div id="openModal2" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/gris.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido"><h4>SACK PANT</h4>
+                <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p></div>
+                <div><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
     
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+            
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+           
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/caqui.jpg" alt="Gris">
+    <a href="#openModal3"><p>$55.000</p></a></div><!--modal-->
+		<div id="openModal3" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/caqui.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div>
+                <h4>SACK PANT</h2>
+                <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                <div class="contenido"><h4>TALLAS</h4>
+                <p class="tallas">S     M     L      XL     XXL     </p></div>
+                <div class="contenido"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+            
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+            
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+            </div>
+                </div>
+            
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/negro.jpg" alt="Gris">
+            <a href="#openModal4"><p>$55.000</p></a></div><!--modal-->
+            <div id="openModal4" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/negro.jpg" alt="Camiseta central">
+                        <p>$55.000</p>
+                    </div>
+                    <div>
+                    <h4>SACK PANT</h2>
+                    <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+    </div> <!-- Cierra el div de pantalones -->
+
+    <div class="pantalones1"> <!-- Segunda sección -->
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/pantalon_gris.jpg" alt="Gris">
+            <a href="#openModal5"><p>$55.000</p></a></div><!--modal-->
+            <div id="openModal5" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/pantalon_gris.jpg" alt="Camiseta central">
+                        <p>$55.000</p>
+                    </div>
+                    <div>
+                    <h4>SACK PANT</h2>
+                    <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/panatalon_caqui.jpg" alt="Gris">
+            <a href="#openModal6"><p>$55.000</p></a></div><!--modal-->
+            <div id="openModal6" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/panatalon_caqui.jpg" alt="Camiseta central">
+                        <p>$55.000</p>
+                    </div>
+                    <div>
+                    <h4>SACK PANT</h2>
+                    <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/pants_cafe.jpg" alt="Gris">
+            <a href="#openModal7"><p>$55.000</p></a></div><!--modal-->
+            <div id="openModal7" class="modalDialog">
+                <div class="contiene_modal">
+                    <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/pantalones/pants_cafe.jpg" alt="Camiseta central">
+                        <p>$55.000</p>
+                    </div>
+                    <div>
+                    <h4>SACK PANT</h2>
+                    <p>Jogger en algodón perchado tipo mónaco resortado con bolsillos laterales </p>
+                    <div class="contenido"><h4>TALLAS</h4>
+                    <p class="tallas">S     M     L      XL     XXL     </p></div>
+                    <div class="contenido"><h4>COLORES</h4>
+                    <div class="colores1"> 
+                    <div id="blanco"></div>
+                    <div id="beich"></div>
+                    <div id="gris"></div>
+                    <div id="azul_oscuro"></div>
+                    <div id="negro"></div>
+                
+                    <div id="azul_claro"></div>
+                    <div id="rosa_pastel"></div>
+                    <div id="rosado"></div>
+                    <div id="violeta"></div>
+                    <div id="morado"></div>
+                 
+                    <div id="amarillo"></div>
+                    <div id="amarillo_pastel"></div>
+                    <div id="amarillo_quemado"></div>
+                    <div id="naranja"></div>
+                    <div id="cafe"></div>
+                
+                    <div id="verde_oscuro"></div>
+                    <div id="verde_pastel"></div>
+                    <div id="rojo"></div>
+                    <div id="rojo_oscuro"></div>
+                    <div id="vinotinto"></div>
+                </div>
+                </div>
+                    </div>
+                
+                    <a id="salida" href="#" >X</a>
+                </div>
+            </div>
+    </div> <!-- Cierra el modal de pantalones1 -->
+
+    <!--Inicia la sección de fotos de buzos e incluye modal*/-->
+    <!-- franja producto -->
+
+    <div class="franja_verde">
+        <h5>Buzos</h5>
+    </div>
+    <div class="busos">
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/blue.png" alt="Gris">
+         <a href="#openModal9"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal9" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/blue.png" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+                
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+           
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/pink.png" alt="Gris">
+        <a href="#openModal10"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal10" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/pink.png" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+                 
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+           
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/verde.png" alt="Gris">
+        <a href="#openModal11"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal11" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/verde.png" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+             
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+            
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+            
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+        
+        </div>
+                </div> <!--cierra contenido-->
+                </div> <!--cierra modal total-->
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+    </div> <!-- Cierra el modal de busos -->
+
+    <div class="busos1">
+
+        <div class="titulo1"> <img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/buso_grey.jpg" alt="Gris">
+        <a href="#openModal12"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal12" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/buso_grey.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2"><h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+             
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+            
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+            </div>
+                <a id="salida" href="#" >X</a>
+                
+            </div>
+        
+
+        <div class="titulo1"><img id="completa" src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/buso_violeta.jpg" alt="Gris">
+         <a href="#openModal13"><p>$50.000</p></a></div><!--modal-->
+        <div id="openModal13" class="modalDialog">
+            <div class="contiene_modal">
+                <div class="imagen_modal"><img  src="../utils/Imagenes/hombre/hombre_urban/oversize/busos/buso_violeta.jpg" alt="Camiseta central">
+                    <p>$55.000</p>
+                </div>
+                <div class="modal_total">
+                <div class="contenido2">
+                    <h4>BUZO</h4>
+                <p>Buzo hoddie con capota, cuello redondo, manga lisa y silueta amplia en algodón perchado tipo mónaco. </p></div>
+                <div class="contenido2"><h4>TALLAS</h4>
+                <p>S     M     L      XL     XXL     </p></div>
+                <div class="contenido2"><h4>COLORES</h4>
+                <div class="colores1"> 
+                <div id="blanco"></div>
+                <div id="beich"></div>
+                <div id="gris"></div>
+                <div id="azul_oscuro"></div>
+                <div id="negro"></div>
+                
+                <div id="azul_claro"></div>
+                <div id="rosa_pastel"></div>
+                <div id="rosado"></div>
+                <div id="violeta"></div>
+                <div id="morado"></div>
+             
+                <div id="amarillo"></div>
+                <div id="amarillo_pastel"></div>
+                <div id="amarillo_quemado"></div>
+                <div id="naranja"></div>
+                <div id="cafe"></div>
+             
+                <div id="verde_oscuro"></div>
+                <div id="verde_pastel"></div>
+                <div id="rojo"></div>
+                <div id="rojo_oscuro"></div>
+                <div id="vinotinto"></div>
+            </div>
+        </div>
+                </div>
+                <a id="salida" href="#" >X</a>
+            </div>
+        </div>
+
+
+    </div> <!-- Cierra el modal de busos -->
+
+
+
+    <!-- footer con grilla  -->
+    <section class="footerGri"> 
+        <div class="contactoGri">
+            <img id="icono_contacto" src="../Utils/Imagenes/footer/whatsapp_icono.svg" alt="contacto">
+            <h1>CONTACTO</h1>
+            <a href="https://api.whatsapp.com/message/P7JDS6WZTV5LM1"><h3>301-525-2844</h3></a>
+            <a href="https://www.google.com/maps/place/Av.+1+de+Mayo+%2312g-34,+Bogot%C3%A1/@4.5806788,-74.1033948,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f98dd90a33e15:0xb0f5c57c528b9f18!8m2!3d4.5806788!4d-74.1012061"><h3>Avenida 1 de mayo #12g-34 sur</h3></a>
+        </div>
+        <div class="redesGri">
+            <img id="icono_redes" src="../Utils/Imagenes/footer/people_icono.svg">
+            <h1>REDES SOCIALES</h1>
+            <div class="redes_sociales">
+                <a href="https://www.instagram.com/sackstore_/"><img id="instagram" src="../Utils/Imagenes/footer/instagram.svg" ></a>
+                <a href="https://www.facebook.com/davidfelipe.mejiaruiz"><img id="facebook" src="../Utils/Imagenes/footer/facebook.svg "></a>
+            </div>
+        </div> 
+        <div class="pagoGri">
+            <img id="icono_pago" src="../Utils/Imagenes/footer/icono_hands.svg" alt="pago">
+            <h1>MEDIOS DE PAGO</h1>
+            <h3>Bancolombia</h3>
+            <h3>Nequi</h3>
+            <h3>Daviplata</h3>
+        </div>
+    </section>
+    <!-- franja final  -->
+    <div class="franja_verde">
+        <h1>Somos arte, somos Sack</h1>
+    </div>
 </body>
 </html>

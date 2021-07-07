@@ -1,0 +1,36 @@
+
+.fotos1{ /*Sección primera de fotos*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.fotos1 img{
+    margin: 5%;
+}
+.fotos2{ /*Sección segunda de fotos*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.fotos2 img{
+    margin: 5%;
+}
+.texto{ /*Elige el color [..]*/
+    font-family: "Monserrat_Bold";
+    text-align: center;
+    font-size: 34px;
+}
+
+/*FUENTES*/
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat_Light";
+    src: url(../Fuentes/Montserrat-Light.woff);
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat_Bold";
+    src: url(../Fuentes/Montserrat-Bold.woff);
+}
