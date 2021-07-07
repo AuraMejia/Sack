@@ -150,22 +150,6 @@ p{
     text-decoration: none;
     color: black;
 }
-.pantalones{
-    display: flex;
-    justify-content: space-around;
-}
-.busos{
-    display: flex;
-}
-.busos1{
-    display: flex;
-    justify-content: space-around;
-}
-.pantalones1{
-    display: flex;
-    /*margin-bottom: 35px;*/
-    margin-left: 3%;
-}
 .colores1{
     justify-content: space-around;
     display: grid;

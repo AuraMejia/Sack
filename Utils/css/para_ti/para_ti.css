@@ -1,23 +1,29 @@
 
 .fotos1{ /*Sección primera de fotos*/
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-align: center;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
 }
 .fotos1 img{
-    margin: 5%;
+    margin: 15%;
 }
 .fotos2{ /*Sección segunda de fotos*/
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-align: center;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
 }
 .fotos2 img{
-    margin: 5%;
+    margin: 15%;
 }
 .texto{ /*Elige el color [..]*/
     font-family: "Monserrat_Bold";
@@ -25,12 +31,25 @@
     font-size: 34px;
 }
 
-/*FUENTES*/
-@font-face { /*Carpeta de fuentes*/
-    font-family: "Monserrat_Light";
-    src: url(../Fuentes/Montserrat-Light.woff);
+/* responsive */
+@media screen and (min-width:375px) and (max-width:420px) {
+    .fotos1, .fotos2{
+        grid-template-columns: 1fr;
+        display: grid;
+        margin: 0;
+    } 
+    .fotos1 img{
+        margin: 0;
+    }
 }
-@font-face { /*Carpeta de fuentes*/
-    font-family: "Monserrat_Bold";
-    src: url(../Fuentes/Montserrat-Bold.woff);
+
+@media screen and (min-width:421px) and (max-width:800px) {
+    .fotos1, .fotos2{
+        grid-template-columns: 1fr;
+        display: grid;
+        margin: 0;
+    } 
+    .fotos2 img{
+        margin: 0;
+    }
 }
