@@ -1,0 +1,38 @@
+.imgenesLino{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.imagLarga{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+}
+.imagLarga img {
+    width: 485px;
+    height: 635px;
+}
+
+.imagSqua{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+.imagSqua img{
+    width: 300px;
+    height: 300px;
+}

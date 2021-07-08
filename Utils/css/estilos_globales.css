@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* fuentes */
+@font-face{
+    src: url(../Fuentes/Montserrat-Bold.woff);
+    font-family: 'Monserrat_Bold';
+}
+@font-face {
+    src: url(../Fuentes/Montserrat-Light.woff);
+    font-family: 'Monserrat_light' ;
+    
+}
+
+h1{
+    margin: 0;
+    font-family: "Monserrat_Bold";
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+h2{
+    padding-left: 30px;
+    margin: 0px 0px 0px;
+    font-family: "Monserrat_Bold";
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+}
+h3{
+    font-family: 'Monserrat_light';
+    font-size: 18px;
+    padding-top: 7px;
+}
+/* franjas */
+/* verde */
+.franja_verde{
+    width: 100%;
+    height: 40px;
+    background-color: #77EAAF;
+    position: relative;
+}
+/* morada */
+.franja_morada{
+    width: 100%;
+    height: 40px;
+    background-color: #B194C8;
+    position: relative;
+}
+/* cabecera */
+.cabecera{
+    width: 100%;
+    height: auto;
+}
+#home{
+    width: 100%;
+    overflow: hidden;
+}
+#menu{
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.portada{
+    width: 100%;
+}
+/* cuando es una una columnas  */
+.imgenes1{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+/* cuando es una fila de dos columnas  */
+.imgenes2{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+/* cuando es una fila de tres columnas  */
+.imgenes3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+
+
+.imag{
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.imgenes3 img{
+    width:250px;
+    height: 300px;
+}
+.imgenes2 img{
+    width:250px;
+    height: 300px;
+}
+
+
+
+
+
+
+/* footer */
+.footerGri{ /*Contenedor padre*/
+    background-color: #B194C8;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    height: auto;
+    align-items: center;
+}
+.footerGri{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+/* iconos  */
+#icono_contacto, #icono_redes, #icono_pago{
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 19px;
+}
+/* enlaces  */
+.footerGri a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/* TODO: mirar porque no sirve con el css de responsive */
+/* responsive */
+@media screen and (min-width:375px) and (max-width:420px) {
+    .footerGri, .imgenes2, .imgenes3{
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+    .footerGri, .imgenes2, .imgenes3{
+        grid-template-columns: 1fr;
+    } 
+}
+
+
+
