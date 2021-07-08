@@ -1,0 +1,62 @@
+  
+  ul{
+    display: none;
+    background-color: black;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+    font-weight: bold;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+    text-align: center;
+    user-select: none;
+    justify-content: center;
+  }
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  label:hover{
+    background: #C7C6CA;
+    cursor: pointer;
+  }
+  
+  ul{ /*Le da estilos a la caja*/
+    margin-top:0;
+    padding: 0;
+    width: 275px;
+  }
+  li {
+    display: block;
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 3px solid white;
+    text-align: center;
+    font-family: "Monserrat-Bold.woff";
+  }
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  li:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+    background-color: #938F9B; 
+  }
+  @font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Light.woff";
+    src: url(../Fuentes/Montserrat-Light.woff);
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Bold.woff";
+    src: url(../Fuentes/Montserrat-Bold.woff);
+}
