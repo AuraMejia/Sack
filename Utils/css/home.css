@@ -5,45 +5,92 @@
 }
 .bannerprincipal img{
     width: 100%;
-    height: 600px;
+    height: 630px;
     overflow: hidden;
-    padding-top: 10px;
+    padding-top: 60px;
     background-attachment: fixed;
      
 }
+.franja_verde, .cabecera{
+    position: relative;
+}
+
 
 
 /*Menù lateral*/
 
+#menu{
+    padding-left: 180px;
+}
+
+input [type="checkbox"]
+{
+    display: none;
+}
+label{
+    padding-left: 35%;
+    position: absolute;
+    z-index: 1;
+
+}
+nav{
+     height: 99vh;
+    left: -300px;
+    position: fixed;
+    transition: all .5s;
+    z-index: 2;
+    top: 0;
+   
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(300px);
+}
 .menu{
-    padding-top: 0%;
+    
     margin: 0px;
     height: 800px;
     width: 500px;
     font-family:  "Monserrat-Light.woff";
-    float: left;
-    
-
-
+    font-size: 20px;
+   
+    float: left;  
 }
 .item1 a{
     color: white ;
+    text-decoration: none;
+    
+    
 }
 .item2{
-    background-color: rgb(173, 167, 167);
+    background-color: rgb(139, 139, 139);
 }
 
 .item1:hover  {
 background-color: rgb(155, 153, 153);
 }
 .item1 {
+    padding: 7px 5px;
     border-bottom: white 2px solid;
     text-align: center;
     background-color: rgb(7, 7, 7);
     min-height: 20px;
 }
 .item2 li:hover{
-background-color: rgb(155, 153, 153); 
+background-color: rgb(119, 119, 119); 
+}
+.item3 li:hover{
+    background-color: rgb(87, 84, 84); 
+} 
+.item2:hover{
+    background-color: rgb(87, 84, 84); 
+}
+.item3 li{
+    font-family:"Monserrat-Bold.woff" ;
+} 
+.item2{
+    font-family:"Monserrat-Bold.woff" ;
 }
 
 
@@ -62,19 +109,58 @@ nav ul li ul {
 /*Fin de Menù lateral*/
 
 /*banner categorias*/
-.categorias img{
-    width: 100%;
-    height: 700px;
+.seccion1{
+    height: auto;
+    width:100%;
+    
     
 }
-.categorias img{
-    height: 250px;
-    width: 250px;
-    padding: 60px;
-    justify-content: right;
-    border-radius: 100%;
+.seccion2{
+    height: auto;
+    width:100%;
+    
 }
 
+.categoria1 {
+width: 250px;
+height: 300px;
+padding: 100px;
+display: inline-block;
+
+
+}
+.categoria1 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    
+}
+ 
+.info{
+    width: 80px;
+    height: 50px;
+    
+}
+.info h4{
+    
+    padding-left: 100px;
+    margin-right: 90px;
+    font-family:  "Monserrat-Bold.woff";
+    
+}
+.categoria2{
+ 
+ padding: 100px;
+ display: inline-block;
+}
+.categoria2 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    
+
+    
+}
 
 /*fin banner categorias*/
 
@@ -84,13 +170,20 @@ nav ul li ul {
     width: 100%;
     height: 500px;
 }
-.franja_verde{
-    margin-top: 50px;
+.testimonios{
+    height: auto;
+    width: 100%;
+    
+    
 }
+
 .testimonios img{
-padding: 50px;
+margin-left: 120px;
+padding: 20px;
 width: 250px;
-height: 300px;
+height: 350px;
+display: inline-block;
+
 }
 
 
@@ -105,3 +198,4 @@ height: 300px;
     font-family: "Monserrat-Bold.woff";
     src: url(../Fuentes/Montserrat-Light.woff);
 }
+
