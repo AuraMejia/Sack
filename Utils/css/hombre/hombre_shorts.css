@@ -40,7 +40,7 @@
   }
   
   .modalDialog{ /*Estilos*/
-    background-color: #F7F7F7 ;
+    /*background-color: #F7F7F7 ;*/
     width:800px;
     display: none;
     position: fixed;
