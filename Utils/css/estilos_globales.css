@@ -66,12 +66,10 @@ h3{
     align-items: center;
     cursor: pointer;
     display: grid;
-    padding-left: 100%;
     grid-template-columns: 1fr;
     text-align: center;
     align-items: center;
     justify-items: center;
-    margin-right: auto;
     align-items: center;
     cursor: pointer;
 }
@@ -193,6 +191,10 @@ h3{
 .btn-wsp:hover{
     background: #20ba5a;
 }
+.contenedor{
+    width: 100%;
+    height: 100%;
+}
 @media only screen and (min-width:320px) and (max-width:768px){
     .btn-wsp{
         width:63px;
@@ -206,7 +208,7 @@ h3{
 /* TODO: mirar porque no sirve con el css de responsive */
 /* responsive */
 @media screen and (min-width:375px) and (max-width:420px) {
-    .footerGri, .imgenes2, .imgenes3{
+    .footerGri, .imgenes2, .imgenes3, #menu{
         grid-template-columns: 1fr;
     } 
 }
