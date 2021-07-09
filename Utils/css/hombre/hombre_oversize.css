@@ -17,6 +17,8 @@ h5{
     padding-top: 6px;
     font-family: "Monserrat_Bold";
 }
+<<<<<<< HEAD
+=======
 .titulo{ /*Contiene al título del precio que activa el modal*/
     text-align: center;
     margin-bottom: 40px;
@@ -290,5 +292,6 @@ p{
       width: 30%;
       height: 30%;
   }
+>>>>>>> origin/Aura
 
 
