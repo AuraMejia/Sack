@@ -11,7 +11,6 @@
     line-height: 0%;
     height: 100px;
     font-family: "Monserrat_Bold";
-    display: flex;
     justify-content: center;
     width: 60%;
 }
@@ -123,12 +122,14 @@ h3{
 .parte1{
     display: flex;
     justify-content: space-around;
-    margin: 7%;
+    margin: 5%;
+    
 }
 .parte2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 @font-face { /*Carpeta de fuentes*/
@@ -138,4 +139,101 @@ h3{
 @font-face { /*Carpeta de fuentes*/
     font-family: "Monserrat-Bold.woff";
     src: url(../Fuentes/Montserrat-Bold.woff);
+}
+/*RESPONSIVE DE 600 a 900*/
+@media screen and (min-width:375px) and (max-width:420px) {
+    .parte1, .parte2{
+        display: grid; 
+    }
+    #info{
+        width: 300px;
+        height: 300px;
+        padding: 15px;
+    }
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .Text{
+        display: grid;
+    } 
+    .SecctionTittle{
+        width: 100%;
+        height: 70px;
+    }
+    .cuadro_info{
+        padding: 0;
+        height: 100px;
+    }
+    h5{
+        font-size: 18px;
+        padding:22px;
+    }
+    h4{
+       font-size: 35px; 
+       padding: 35px;
+    }
+    #bordadora, .img_fondo{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+    .materiales{
+        height: 220px;
+        padding: 20px;
+    }
+    
+    #paleta{
+        width: 200px;
+        height: 300px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+    .parte1, .parte2{
+        display: grid;
+    } 
+    #info{
+        width: 400px;
+        height: 400px;
+        padding: 15px;
+    }
+    .SecctionTittle{
+        width: 100%;
+        height: 70px;
+    }
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 30%;
+    } 
+    .cuadro_info{
+        padding: 0;
+        height: 100px;
+    }
+    h5{
+        font-size: 18px;
+        padding:4%;
+    }
+    h4{
+       font-size: 35px; 
+       padding: 35px;
+    }
+    #bordadora, .img_fondo{
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+    .materiales{
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #paleta{
+        width: 330px;
+        height: 470px;
+        margin-top: 25px;
+        
+}
 }

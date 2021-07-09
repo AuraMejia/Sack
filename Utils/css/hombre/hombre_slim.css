@@ -41,7 +41,7 @@ h5{
   top: 0;
   left: 0;
   margin-top: 20vh;
-  height: 50vh;
+  height: 455px;
   bottom: 0;
   right: 50px;
   justify-content: center;
@@ -70,7 +70,7 @@ h4{
 }
 .contenido{
   height: auto;
-  padding-top: 12%;
+  padding-top: 10%;
   transform: none;
 }
 .contenido2{
@@ -150,22 +150,7 @@ h4{
   text-decoration: none;
   color: black;
 }
-.pantalones{
-  display: flex;
-  justify-content: space-around;
-}
-.busos{
-  display: flex;
-}
-.busos1{
-  display: flex;
-  justify-content: space-around;
-}
-.pantalones1{
-  display: flex;
-  /*margin-bottom: 35px;*/
-  margin-left: 3%;
-}
+
 .colores1{
   justify-content: space-around;
   display: grid;

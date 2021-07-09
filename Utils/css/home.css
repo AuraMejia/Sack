@@ -33,10 +33,14 @@ label{
     z-index: 1;
 
 }
- nav{
+nav{
+     height: 99vh;
     left: -300px;
-    position: absolute;
+    position: fixed;
     transition: all .5s;
+    z-index: 2;
+    top: 0;
+   
 }
 
 input[type="checkbox"]:checked ~ nav
@@ -49,26 +53,44 @@ input[type="checkbox"]:checked ~ nav
     height: 800px;
     width: 500px;
     font-family:  "Monserrat-Light.woff";
+    font-size: 20px;
+   
     float: left;  
 }
 .item1 a{
     color: white ;
+    text-decoration: none;
+    
+    
 }
 .item2{
-    background-color: rgb(173, 167, 167);
+    background-color: rgb(139, 139, 139);
 }
 
 .item1:hover  {
 background-color: rgb(155, 153, 153);
 }
 .item1 {
+    padding: 7px 5px;
     border-bottom: white 2px solid;
     text-align: center;
     background-color: rgb(7, 7, 7);
     min-height: 20px;
 }
 .item2 li:hover{
-background-color: rgb(155, 153, 153); 
+background-color: rgb(119, 119, 119); 
+}
+.item3 li:hover{
+    background-color: rgb(87, 84, 84); 
+} 
+.item2:hover{
+    background-color: rgb(87, 84, 84); 
+}
+.item3 li{
+    font-family:"Monserrat-Bold.woff" ;
+} 
+.item2{
+    font-family:"Monserrat-Bold.woff" ;
 }
 
 
@@ -87,36 +109,69 @@ nav ul li ul {
 /*Fin de Menù lateral*/
 
 /*banner categorias*/
+.seccion1{
+    height: auto;
+    width:100%;
+    
+    
+}
+.seccion2{
+    height: auto;
+    width:100%;
+    
+}
 
-.categoria1 img{
+<<<<<<< HEAD
+.categoria1 {
 width: 250px;
+height: 300px;
+=======
+.categoria1 img{
+width: 18vw;
 height: 250px;
 border-radius: 100%;
+>>>>>>> origin/dev
 padding: 100px;
+display: inline-block;
+
 
 }
-  
-   
+.categoria1 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    
+}
+ 
 .info{
-    margin-top: -80px;
-    font-size: 20px;
-    padding-left: 90px;
-    justify-content: center;
-    display: flex;
+    width: 80px;
+    height: 50px;
     
 }
 .info h4{
-    padding: 160px;
-    padding-top: 0%;
+    
+    padding-left: 100px;
     margin-right: 90px;
     font-family:  "Monserrat-Bold.woff";
     
 }
+.categoria2{
+ 
+ padding: 100px;
+ display: inline-block;
+}
 .categoria2 img{
-    width: 220px;
+<<<<<<< HEAD
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    
+=======
+    width: 15vw;
     height: 220px;
     border-radius: 100%;
-    padding: 120px;
+    padding: 100px;
+>>>>>>> origin/dev
 
     
 }
@@ -129,12 +184,20 @@ padding: 100px;
     width: 100%;
     height: 500px;
 }
+.testimonios{
+    height: auto;
+    width: 100%;
+    
+    
+}
 
 .testimonios img{
-    margin-left: 100px;
-padding: 50px;
+margin-left: 120px;
+padding: 20px;
 width: 250px;
-height: 300px;
+height: 350px;
+display: inline-block;
+
 }
 
 
@@ -149,3 +212,4 @@ height: 300px;
     font-family: "Monserrat-Bold.woff";
     src: url(../Fuentes/Montserrat-Light.woff);
 }
+
