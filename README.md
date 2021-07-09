@@ -30,5 +30,5 @@ Monserrat en light y bold
 
 [Sofia Reyes]: <https://github.com/SofiaRubiano10>
 [Johana Lozano]: <https://github.com/Johanacat>
-[Mishell Uribe]: <https://github.com/SofiaRubiano10>
+[Mishell Uribe]: <https://github.com/mishellconese>
 [Aura Mejía]: <https://github.com/AuraMejia>
