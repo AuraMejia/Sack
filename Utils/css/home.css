@@ -109,23 +109,13 @@ nav ul li ul {
 /*Fin de Menù lateral*/
 
 /*banner categorias*/
-.seccion1{
-    height: auto;
-    width:100%;
-    
-    
-}
-.seccion2{
-    height: auto;
-    width:100%;
-    
-}
+
 
 .categoria1 img{
 width: 18vw;
 height: 250px;
 border-radius: 100%;
-padding: 100px;
+/*padding: 100px;*/
 display: inline-block;
 
 
@@ -149,16 +139,14 @@ display: inline-block;
     font-family:  "Monserrat-Bold.woff";
     
 }
-.categoria2{
- 
- padding: 100px;
- display: inline-block;
+.categoria1, .categoria2{
+    margin-left: 22%;
 }
 .categoria2 img{
     width: 15vw;
     height: 220px;
     border-radius: 100%;
-    padding: 100px;
+    /*padding: 100px;*/
 
     
 }
@@ -174,8 +162,10 @@ display: inline-block;
 .testimonios{
     height: auto;
     width: 100%;
-    
-    
+    display: flex;
+    justify-content: center;
+   
+      
 }
 
 .testimonios img{
@@ -184,6 +174,8 @@ padding: 20px;
 width: 250px;
 height: 350px;
 display: inline-block;
+align-items: center;
+justify-items: space-around;
 
 }
 
