@@ -6,7 +6,7 @@ Las tecnologías que usamos fueron:
 - CSS3
 - JS
 - Git
-- 
+
 Proyecto desarrollado por Johanna Lozano, Sofía Reyes, Mishell Uribe y Aura Mejía. 
 - [Sofia Reyes] 
 - [Johana Lozano]
