@@ -65,10 +65,8 @@ h3{
 #menu{
     align-items: center;
     cursor: pointer;
-    margin-left: auto;
+    margin-left: 245px;
     margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
     align-items: center;
     cursor: pointer;
 }
