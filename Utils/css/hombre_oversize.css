@@ -1,0 +1,120 @@
+.envios{
+    background-color: #77EAAF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    border: 2px black solid;
+    line-height: 0%;
+    width: 100%;
+    font-family: "Monserrat-Bold.woff";
+}
+#home{
+    width: 100%;
+    overflow: hidden;
+}
+#menu{
+    align-items: center;
+    cursor: pointer;
+}
+#banner_oversize_hombre{
+    width: 100%;
+}
+.envios p{
+    align-items: center;
+    justify-content: center;
+
+}
+.SecctionTittle{ /*Contiene al título Oversize*/
+    background-color: #B194C8;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    border: 2px black solid;
+    line-height: 0%;
+    font-family: "Monserrat-Bold.woff";
+}
+.Titulos_producto{ /*Contiene al título de camisetas, pantalones y busos*/
+    background-color: #77EAAF;
+    height: 35px;
+}
+.Titulos_producto h1 { /*Contiene al título de camisetas, pantalones y busos*/
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    font-family: "Monserrat-Bold.woff";
+}
+.complete_pictures{ /*Contiene las fotos*/
+    justify-content: space-around;
+    display: flex;
+}
+#completa  { /*Sección de fotos de las camisas*/
+    width: 30%;
+    height: 340px;
+    margin-top: 8px;
+}
+
+.modalDialog{ /*Contiene toda la estrucutra del modal*/
+    background-color: #E5E5E5;
+    width:800px;
+    margin: 20px; /*Ojo*/
+    position: relative;
+    font-family: "Monserrat-Light.woff";
+    display: flex;
+    transition: all 1s;
+    height: 50%;
+  }
+
+  .imagen_modal img {
+      display: flex;
+      width: 80%;
+      height: 80%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 25px;
+      margin-top: 25px;
+  }
+.caja a{
+    font-family: "Monserrat-Light.woff";
+    text-decoration: none;
+    font-size: 28px;
+}
+.caja{
+    text-align: center;
+}
+.colores{
+    display: flex;
+    justify-content: space-around;
+}
+ #negro{
+     background-color: black;
+     border-radius: 50%;
+     width: 25px;
+     height: 25px;
+ }
+ #blanco{
+    background-color: white; 
+    border-radius: 50%;
+    width: 8%;
+ }
+ #gris{
+    background-color:grey;
+    border-radius: 50%;
+    width: 8%;
+ }
+  .camisetas img{
+      width: 30%;
+      height: 30%;
+  }
+.precio_modal{
+    text-align: center;
+    font-size: 23px;  
+}
+
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Light.woff";
+    src: url(../Fuentes/Montserrat-Light.woff);
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "Monserrat-Bold.woff";
+    src: url(../Fuentes/Montserrat-Bold.woff);
+}
