@@ -29,6 +29,8 @@ label{
     padding-left: 35%;
     position: absolute;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
 
 }
 nav{
