@@ -121,16 +121,10 @@ nav ul li ul {
     
 }
 
-<<<<<<< HEAD
-.categoria1 {
-width: 250px;
-height: 300px;
-=======
 .categoria1 img{
 width: 18vw;
 height: 250px;
 border-radius: 100%;
->>>>>>> origin/dev
 padding: 100px;
 display: inline-block;
 
@@ -161,17 +155,10 @@ display: inline-block;
  display: inline-block;
 }
 .categoria2 img{
-<<<<<<< HEAD
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    
-=======
     width: 15vw;
     height: 220px;
     border-radius: 100%;
     padding: 100px;
->>>>>>> origin/dev
 
     
 }
