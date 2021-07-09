@@ -109,44 +109,55 @@ nav ul li ul {
 /*Fin de Menù lateral*/
 
 /*banner categorias*/
-
+.seccion1{
+    height: auto;
+    width:100%;
+    
+    
+}
+.seccion2{
+    height: auto;
+    width:100%;
+    
+}
+.categoria1{
+ 
+    padding: 10px;
+    display: inline-block;
+ }
 
 .categoria1 img{
 width: 18vw;
 height: 250px;
 border-radius: 100%;
-/*padding: 100px;*/
+padding: 90px;
 display: inline-block;
 
 
 }
-.categoria1 img{
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    
-}
- 
+
 .info{
     width: 80px;
     height: 50px;
     
 }
 .info h4{
-    
-    padding-left: 100px;
+    margin-top: -80px;
+    padding-left: 160px;
     margin-right: 90px;
     font-family:  "Monserrat-Bold.woff";
     
 }
-.categoria1, .categoria2{
-    margin-left: 22%;
+.categoria2{
+ 
+ padding: 10px;
+ display: inline-block;
 }
 .categoria2 img{
     width: 15vw;
     height: 220px;
     border-radius: 100%;
-    /*padding: 100px;*/
+    padding: 100px;
 
     
 }
