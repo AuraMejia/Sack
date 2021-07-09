@@ -65,7 +65,11 @@ h3{
 #menu{
     align-items: center;
     cursor: pointer;
-    margin-left: 245px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
     margin-right: auto;
     align-items: center;
     cursor: pointer;
