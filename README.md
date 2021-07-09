@@ -7,7 +7,7 @@ Las tecnologías que usamos fueron:
 - JS
 - Git
 
-Proyecto desarrollado por Johanna Lozano, Sofía Reyes, Mishell Uribe y Aura Mejía. 
+Proyecto desarrollado por:
 - [Sofia Reyes] 
 - [Johana Lozano]
 - [Mishell Uribe]
